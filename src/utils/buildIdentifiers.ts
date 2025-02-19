@@ -12,5 +12,5 @@ export const spreadDisabled = makeLazy(() => {
         return false;
     }
 
-    return String(tooltipsFactory).includes('="div",...');
+    return !String(tooltipsFactory).includes('="div",...');
 });
