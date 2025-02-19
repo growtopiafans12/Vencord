@@ -4,10 +4,11 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-import { makeLazy } from "./lazy";
+import { makeLazy } from "@utils/lazy";
+import { findModuleFactory } from "@webpack";
 
 export const spreadDisabled = makeLazy(() => {
-    const tooltipsFactory = Vencord.Webpack.findModuleFactory("tooltipTop,bottom:");
+    const tooltipsFactory = findModuleFactory("tooltipTop,bottom:");
     if (tooltipsFactory == null) {
         return false;
     }
