@@ -18,6 +18,7 @@
 
 export * from "../shared/debounce";
 export * from "../shared/onceDefined";
+export * from "./buildIdentifiers";
 export * from "./ChangeList";
 export * from "./constants";
 export * from "./discord";
